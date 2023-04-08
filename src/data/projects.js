@@ -1,14 +1,14 @@
 export default [
 	{
 		title: 'Pomodorish',
-		imgURL: '',
+		imgURL: '/assets/pomodorish.png',
 		stack: ['JavaScript', 'CSS'],
 		link: 'https://pomodorish.netlify.app/',
 		repository: 'https://github.com/natanschneider/pomodorish/',
 	},
 	{
 		title: 'Campeonato Brasileiro',
-		imgURL: '',
+		imgURL: '/assets/TabelaBrasileiro.png',
 		stack: [
 			'PHP',
 			'CSS',
