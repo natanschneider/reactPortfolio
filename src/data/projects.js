@@ -1,17 +1,14 @@
 export default [
 	{
 		title: 'Pomodorish',
-		imgURL: 'TO-DO',
-		stack: [
-			'JavaScript',
-			'CSS'
-		],
+		imgURL: '',
+		stack: ['JavaScript', 'CSS'],
 		link: 'https://pomodorish.netlify.app/',
-		repository: 'https://github.com/natanschneider/pomodorish'
+		repository: 'https://github.com/natanschneider/pomodorish/',
 	},
 	{
 		title: 'Campeonato Brasileiro',
-		imgURL: 'TO-DO',
+		imgURL: '',
 		stack: [
 			'PHP',
 			'CSS',
@@ -19,6 +16,6 @@ export default [
 			'API'
 		],
 		link: 'https://tabelabrasileiroseriea.000webhostapp.com/',
-		repository: 'https://github.com/natanschneider/TabelaBrasileirao'
+		repository: 'https://github.com/natanschneider/TabelaBrasileirao/',
 	},
 ]
