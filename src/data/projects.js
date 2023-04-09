@@ -18,4 +18,15 @@ export default [
 		link: 'https://tabelabrasileiroseriea.000webhostapp.com/',
 		repository: 'https://github.com/natanschneider/TabelaBrasileirao/',
 	},
+	{
+		title: 'Meu Portfolio',
+		imgURL: '/assets/portfolio.png',
+		stack: [
+			'TailwindCSS',
+			'ViteJS',
+			'ReactJS'
+		],
+		link: 'https://natansch-porfolio-devel.netlify.app/',
+		repository: 'https://github.com/natanschneider/reactPortfolio/',
+	},
 ]
