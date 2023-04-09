@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PortfolioItem({ title, imgUrl, stack, link }) {
+function PortfolioItem({ title, imgUrl, stack, link, repository }) {
 	return (
 		<a
 			href={link}
@@ -23,6 +23,17 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
 					))}
 				</p>
 			</div>
+			<a
+				href={repository}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<div className="w-full flex justify-center">
+					<p className="text-bold text-lg md:text-xl dark:text-white">
+						Repository
+					</p>
+				</div>
+			</a>
 		</a>
 	)
 }
