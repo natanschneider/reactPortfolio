@@ -11,7 +11,8 @@ export default [
         title: 'Instrutor de Desenvolvimento Web e Informatica Fundamental @ Senac Santa Cruz do Sul',
         duration: 'Janeiro/2023 - Março/2023',
         details:
-            'Ensinei jovens de 14 a 19 anos sobre Desenvolvimento Web utilizando PHP, Javascript, Node.JS, Express e bancos de dados como MariaDB e MongoDB.',
+            "Ensinei jovens de 14 a 19 anos sobre Desenvolvimento Web utilizando PHP, Javascript, Node.JS, Express e bancos de dado como MariaDB e MongoDB. " +
+            "Também ensinei os basicos sobre o MS Windows e o pacote Office"
     },
     {
         year: '2020',
