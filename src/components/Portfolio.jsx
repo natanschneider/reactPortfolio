@@ -12,6 +12,7 @@ function Portfolio() {
 						title={project.title}
 						stack={project.stack}
 						link={project.link}
+						repository={project.repository}
 					/>
 				))}
 			</div>
