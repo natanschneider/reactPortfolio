@@ -28,7 +28,7 @@ function PortfolioItem({ title, imgUrl, stack, link, repository }) {
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<div className="w-full flex justify-center">
+				<div className="w-full flex justify-center border-t-2 border-stone-900 dark:border-white py-2">
 					<p className="text-bold text-lg md:text-xl dark:text-white">
 						Repository
 					</p>
