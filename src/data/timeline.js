@@ -4,7 +4,7 @@ export default [
         title: 'Desenvolvedor FullStack @ Deltasul Utilidades',
         duration: 'Abril/2023 - o momento',
         details:
-            'Sou responsável pelo desenvolvimento e manutenção de sistemas Web internos, utilizando PHP, JavaScript e ORACLE SQL.',
+            'Sou responsável pelo desenvolvimento e manutenção de sistemas Web internos, utilizando PHP, JavaScript, TailwindCSS e ORACLE SQL.',
     },
     {
         year: '2023',
@@ -12,7 +12,7 @@ export default [
         duration: 'Janeiro/2023 - Março/2023',
         details:
             "Ensinei jovens de 14 a 19 anos sobre Desenvolvimento Web utilizando PHP, Javascript, Node.JS, Express e bancos de dado como MariaDB e MongoDB. " +
-            "Também ensinei os basicos sobre o MS Windows e o pacote Office"
+            "Também ensinei os básicos sobre o MS Windows e o pacote Office"
     },
     {
         year: '2020',
