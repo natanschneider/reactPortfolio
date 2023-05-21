@@ -16,7 +16,7 @@ export function Contact() {
 			<div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
 
 				<div className="flex flex-wrap">
-						<div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
+						<div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6 md:mr-16">
 							<a
 								href="mailto:natanschneider@protonmail.com"
 								target="_blank"
@@ -61,7 +61,7 @@ export function Contact() {
 								</div>
 							</a>
 						</div>
-						<div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6">
+						<div className="mb-12 grow-0 shrink-0 basis-auto w-full lg:w-6/12 px-3 lg:px-6 md:mr-16">
 							<a
 								href="https://github.com/natanschneider"
 								target="_blank"
