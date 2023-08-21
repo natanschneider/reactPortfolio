@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Intro from "./components/Intro.jsx";
 import Portfolio from "./components/Portfolio.jsx";
 import Timeline from "./components/Timeline.jsx";
+import Feed from './components/Feed.jsx';
 import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 
@@ -68,7 +69,7 @@ function App() {
 			<button
 				type="button"
 				onClick={handleThemeSwitch}
-				className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg p-1 rounded-md"
+				className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg rounded-md"
 			>
 				{theme === 'dark' ? sun : moon}
 			</button>
@@ -77,6 +78,7 @@ function App() {
 					<Intro />
 					<Portfolio />
 					<Timeline />
+					<Feed />
 					<Contact />
 					<Footer />
 				</div>
