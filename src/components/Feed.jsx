@@ -9,15 +9,15 @@ export default function Feed() {
         fetchFeed();
     }, []);
 
-    const fetchFeed = () => {
+    const fetchFeed = async () => {
         try {
-            const response = axios.get(import.meta.env.VITE_API_URL + '/feed');
+            const response = await axios.get(import.meta.env.VITE_API_URL + '/feed');
             setFeedApi(response.data);
         } catch (error) {
             console.log(error.message);
         }
     };
-
+	
     const feedComponenet = (
         <div className="flex flex-col md:flex-row items-center justify-center">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
