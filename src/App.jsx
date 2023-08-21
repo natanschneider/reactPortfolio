@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Intro from "./components/Intro.jsx";
-import Portfolio from "./components/Portfolio.jsx";
-import Timeline from "./components/Timeline.jsx";
-import Feed from './components/Feed.jsx';
-import Contact from "./components/Contact.jsx";
-import Footer from "./components/Footer.jsx";
+import Intro from './components/Intro';
+import Portfolio from './components/Portfolio';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { PageNotFound } from './components/pages/PageNotFound.jsx';
 
 function App() {
 
@@ -75,16 +73,28 @@ function App() {
 			</button>
 			<div className="bg-white dark:bg-gray-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
 				<div className="max-w-5xl w-11/12 mx-auto">
-					<Intro />
-					<Portfolio />
-					<Timeline />
-					<Feed />
-					<Contact />
-					<Footer />
+					<Router>
+						<Routes>
+							<Route path='/' exact Component={Home} />
+
+							<Route Component={PageNotFound} />
+						</Routes>
+					</Router>
 				</div>
 			</div>
 		</>
 	)
 }
+
+const Home = () => (
+	<>
+		<Intro />
+		<Portfolio />
+		<Timeline />
+		<Feed />
+		<Contact />
+		<Footer />
+	</>
+);
 
 export default App
