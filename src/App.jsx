@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
+import Timeline from './components/Timeline';
+import Feed from './components/Feed';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Post from './components/Post'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { PageNotFound } from './components/pages/PageNotFound.jsx';
 
 function App() {
 
@@ -76,8 +80,8 @@ function App() {
 					<Router>
 						<Routes>
 							<Route path='/' exact Component={Home} />
-
-							<Route Component={PageNotFound} />
+							<Route path='/post/:id' exact Component={Post} />
+							<Route render={() => <h1>404: page not found</h1>} />
 						</Routes>
 					</Router>
 				</div>
