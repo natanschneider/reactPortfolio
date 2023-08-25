@@ -12,10 +12,6 @@ export default function Post(){
     
     const fetchPost = async () => {
         try{
-            const reqBody = {
-                id: id
-            }
-
             const response = await axios.get(import.meta.env.VITE_API_URL + '/post', {
                 params: {
                     id: id
