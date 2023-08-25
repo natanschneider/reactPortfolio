@@ -7,7 +7,7 @@ export default function FeedItem({id, title, content}){
         >
             <div className="w-full p-4">
                 <a
-                    href={id}
+                    href={'/post/' + id}
                     target="_blank"
                     rel="noopener noreferrer"
                 >
