@@ -1,6 +1,7 @@
 import axios from "axios";
 import {useState, useEffect} from 'react';
 import { useParams } from "react-router-dom";
+import Header from "./Header";
 
 export default function Post(){
     let {id} = useParams()
@@ -24,15 +25,13 @@ export default function Post(){
     }
 
     const component = (
-        <>
-            
-                <div>
-                    <h1>{Post.title}</h1>
-
-                    <p>{Post.content}</p>
-                </div>
-          
-        </>
+        <div className="w-full">
+            <Header />
+            <div>
+                <h1>{Post.title}</h1>
+                <p>{Post.content}</p>
+            </div>
+        </div>
     );
 
     return component;
