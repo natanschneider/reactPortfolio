@@ -8,7 +8,7 @@ export default function FeedItem({id, title, content}){
             <div className="w-full p-4">
                 <a
                     href={'/post/' + id}
-                    target="_blank"
+                    target="_self"
                     rel="noopener noreferrer"
                 >
                     <h3 className="text-lg md:text-xl dark:text-white mb-1 md:mb-2 font-semibold">{title}</h3>
