@@ -57,7 +57,7 @@ export default function Header(){
 		</svg>
 	);
 
-    return(
+    const header = (
         <nav className="bg-white dark:bg-gray-900 w-full z-20 border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center">
@@ -71,16 +71,20 @@ export default function Header(){
                     <li>
                         <a href="/post" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Publicações</a>
                     </li>
-                    </ul>
+					<li>
                     <button
                         type="button"
                         onClick={handleThemeSwitch}
-                        className="fixed p-2 z-10 right-20 top-4 bg-violet-300 dark:bg-orange-300 text-lg rounded-md dark:text-gray-700"
+                        className="p-1  bg-violet-300 dark:bg-orange-300 text-lg rounded-md dark:text-gray-700"
                     >
                         {theme === 'dark' ? sun : moon}
 			        </button>
+					</li>
+					</ul>
                 </div>
             </div>
         </nav>
-    )
+    );
+
+	return(header);
 }
