@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Post from './components/Post'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Posts from './components/Posts';
 import Home from './components/Home';
+import FourOFour from './components/FourOFour';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 							<Route path='/' element={ <Home /> } exact />
 							<Route path='/post/:id' element={ <Post /> } exact />
 							<Route path='/post' element={ <Posts /> } exact />
+							<Route path='*' element={ <FourOFour /> } />
 						</Routes>
 					</Router>
 				</div>
