@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Posts from './components/Posts';
 import Home from './components/Home';
 import FourOFour from './components/FourOFour';
+import Login from './components/Login';
+import AdminTimeline from './components/AdminTimeline';
 
 function App() {
 	return (
@@ -14,6 +16,8 @@ function App() {
 							<Route path='/' element={ <Home /> } exact />
 							<Route path='/post/:id' element={ <Post /> } exact />
 							<Route path='/post' element={ <Posts /> } exact />
+							<Route path='/admin' element={ <Login /> } exact />
+							<Route path='/admin/timeline' element={ <AdminTimeline /> } exact />
 							<Route path='*' element={ <FourOFour /> } />
 						</Routes>
 					</Router>
