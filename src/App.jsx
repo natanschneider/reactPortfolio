@@ -6,6 +6,7 @@ import Home from './components/Home';
 import FourOFour from './components/FourOFour';
 import Login from './components/Login';
 import AdminTimeline from './components/AdminTimeline';
+import TimelineCreate from './components/TimelineCreate';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 							<Route path='/post' element={ <Posts /> } exact />
 							<Route path='/admin' element={ <Login /> } exact />
 							<Route path='/admin/timeline' element={ <AdminTimeline /> } exact />
+							<Route path='/admin/timeline/create' element={ <TimelineCreate /> } exact />
 							<Route path='*' element={ <FourOFour /> } />
 						</Routes>
 					</Router>
