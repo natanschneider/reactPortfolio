@@ -33,9 +33,7 @@ export default function Post(){
                 <br></br>
                 <p>{Post.content}</p>
             </div>
-            <div className="fixed bottom-0 right-[50%]">
-                <Footer />
-            </div>
+            <Footer />
         </div>
     );
 
