@@ -20,7 +20,7 @@ export default function AdminSidebar(){
 
     return(
         
-            <div class="flex flex-col relative">
+            <div class="hidden flex-col relative lg:block">
                 <div id="menu" class="bg-gray-900 z-10 text-slate-300 w-64 fixed left-0 h-screen">
                    <div id="nav">
                     <a href="/admin/timeline" class="w-full px-2 inline-flex space-x-2 items-center border-b border-slate-700 py-3 bg-blue-800 hover:bg-white/5 transition ease-linear duration-150">
