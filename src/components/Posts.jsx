@@ -33,6 +33,7 @@ export default function Posts(){
                             id={row.id}
                             title={row.title}
                             content={row.content}
+                            date={row.createAt}
                         />
                     </li>
                 ))}
